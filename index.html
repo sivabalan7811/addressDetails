@@ -3,28 +3,136 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact Information</title>
+<title>Hotel STM Palace</title>
+
 <style>
-body{font-family:Arial,sans-serif;background:#f5f5f5;margin:0;display:flex;justify-content:center;align-items:center;height:100vh}
-.card{background:#fff;width:350px;padding:25px;border-radius:12px;box-shadow:0 5px 15px rgba(0,0,0,.15);text-align:center}
-a{color:#007BFF;text-decoration:none;font-weight:bold}
-.button{display:block;margin-top:15px;padding:12px;background:#007BFF;color:#fff;border-radius:8px;text-decoration:none}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f5f5f5;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:20px;
+}
+
+.card{
+    width:100%;
+    max-width:380px;
+    background:#fff;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+    padding:20px;
+    text-align:center;
+}
+
+.hotel-image{
+    width:100%;
+    height:auto;
+    max-height:220px;
+    object-fit:cover;
+    border-radius:10px;
+    margin-bottom:18px;
+}
+
+h1{
+    font-size:28px;
+    margin-bottom:15px;
+}
+
+p{
+    margin-bottom:15px;
+    line-height:1.6;
+    color:#444;
+    word-wrap:break-word;
+}
+
+a{
+    color:#007BFF;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.button{
+    display:block;
+    width:100%;
+    background:#007BFF;
+    color:#fff;
+    padding:14px;
+    border-radius:8px;
+    margin-top:20px;
+    text-decoration:none;
+    font-size:16px;
+}
+
+.button:hover{
+    background:#0056b3;
+}
+
+/* Mobile */
+@media (max-width:480px){
+
+    body{
+        padding:15px;
+    }
+
+    .card{
+        padding:18px;
+    }
+
+    h1{
+        font-size:24px;
+    }
+
+    p{
+        font-size:15px;
+    }
+
+    .button{
+        font-size:15px;
+        padding:12px;
+    }
+}
 </style>
+
 </head>
+
 <body>
+
 <div class="card">
-<h1>Hotel STM Palace</h1>
-<p><strong>Address</strong><br>Thadagam Road,
 
-Near Paal Company,
+    <img src="images/hotel.jpeg" alt="Hotel STM Palace" class="hotel-image">
 
-RS Puram,
+    <h1>Hotel STM Palace</h1>
 
-Coimbatore - 641 002.</p>
-<p><strong>Phone</strong><br><a href="tel:+919943322003">0422 4959501
+    <p>
+        <strong>Address</strong><br>
+        Thadagam Road,<br>
+        Near Paal Company,<br>
+        RS Puram,<br>
+        Coimbatore - 641002
+    </p>
 
-+91 99433 22003, +91 83 5000 6000</a></p>
-<a class="button" href="https://www.google.com/maps?q=11.0076187,76.945417&z=17&hl=en" target="_blank">Open in Google Maps</a>
+    <p>
+        <strong>Phone</strong><br><br>
+        <a href="tel:+914224959501">0422 4959501</a><br>
+        <a href="tel:+919943322003">+91 99433 22003</a><br>
+        <a href="tel:+918350006000">+91 83500 06000</a>
+    </p>
+
+    <a class="button"
+       href="https://www.google.com/maps/place/Hotel+STM+Palace/@11.0075524,76.9452259,17.14z/data=!4m9!3m8!1s0x3ba8592af607278f:0xcc5d31989c42b15a!5m2!4m1!1i2!8m2!3d11.0076089!4d76.9453095!16s%2Fg%2F11h7bdd6sd"
+       target="_blank">
+       📍 Open in Google Maps
+    </a>
+
 </div>
+
 </body>
 </html>
